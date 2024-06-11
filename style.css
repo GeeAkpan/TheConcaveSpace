@@ -201,3 +201,56 @@ nav {
     margin: 5px 0;
     color: #666;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .booking-form {
+        margin: 10px;
+    }
+
+    .desk-grid {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 20px 10px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        gap: 5px;
+    }
+
+    .booking-form {
+        padding: 10px;
+    }
+
+    .cta-button {
+        width: 100%;
+        padding: 15px;
+    }
+}
