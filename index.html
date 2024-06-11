@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-working Space Booking System</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">TheConcave</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#signup" class="signup-button">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to TheConcave</h1>
+            <p>Experience the best co-working space for professionals and teams.</p>
+            <button class="cta-button">Book Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="./img/austin-distel-mpN7xjKQ_Ns-unsplash.jpg" alt="Co-working Space">
+        </div>
+    </section>
+
+    <div class="booking-container">
+        <div class="desks">
+            <h2>Individual Desks</h2>
+            <div class="desk-grid" id="individual-desks">
+                <!-- Individual desks will be generated here by JavaScript -->
+            </div>
+        </div>
+
+        <div class="desks">
+            <h2>Team Desks</h2>
+            <div class="desk-grid" id="team-desks">
+                <!-- Team desks will be generated here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <div class="booking-form">
+        <h2>Book a Desk</h2>
+        <form id="booking-form">
+            <label for="desk-type">Desk Type:</label>
+            <select id="desk-type" required>
+                <option value="individual">Individual</option>
+                <option value="team">Team</option>
+            </select>
+            <label for="desk-number">Desk Number:</label>
+            <input type="number" id="desk-number" min="1" required>
+            <label for="membership-tier">Membership Tier:</label>
+            <select id="membership-tier" required>
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+                <option value="executive">Executive</option>
+            </select>
+            <label for="hours">Hours:</label>
+            <input type="number" id="hours" min="1" required>
+            <button type="submit">Book Now</button>
+        </form>
+        <div id="total-charge"></div>
+    </div>
+    <div class="dashboard">
+        
+        <h2>Revenue Dashboard</h2>
+        <div id="revenue-summary">
+            <!-- Revenue summary will be generated here by JavaScript -->
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
